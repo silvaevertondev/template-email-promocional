@@ -1,0 +1,161 @@
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --preto: #000000;
+  --branco: #ffffff;
+  --rosa-claro: #ffe0fc;
+  --dark-jungle-green: #1c1e23;
+}
+
+header {
+  background-color: var(--branco);
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  padding: 15px 0 15px 60px;
+  width: 25%;
+}
+
+.banner {
+  width: 100vw;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 250px;
+  background-color: var(--rosa-claro);
+}
+
+.titulo_principal {
+  font-size: 2em;
+  line-height: 52px;
+  color: var(--dark-jungle-green);
+  font-weight: 600;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.principal a {
+  background-color: var(--preto);
+  color: var(--branco);
+  font-size: 18px;
+  border: 2px solid var(--preto);
+  padding: 14px 26px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.texto-email {
+  font-size: 1em;
+  position: absolute;
+  max-width: 70%;
+}
+
+.container {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.hello {
+  font-weight: bold;
+}
+
+.texto-email p {
+  font-size: 2em;
+  margin: 2em 0;
+  text-align: justify;
+}
+
+.texto-email a {
+  background-color: var(--preto);
+  color: var(--branco);
+  font-size: 18px;
+  border: 2px solid var(--preto);
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 4em;
+  padding: 30px 0;
+  background-color: var(--preto);
+  width: 100vw;
+  height: 120px;
+  color: var(--branco);
+  position: relative;
+}
+
+.rodape {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: left;
+  line-height: 2em;
+}
+
+.rodape a {
+  color: inherit;
+}
+
+@media screen and (max-width: 1370px) {
+  .texto-email {
+    font-size: 0.8em;
+  }
+
+  .rodape {
+    position: absolute;
+    left: 15%;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    padding: 15px 0;
+    width: 30%;
+  }
+
+  .texto-email {
+    font-size: 0.6em;
+  }
+
+  .rodape {
+    position: static;
+    text-align: center;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .texto-email {
+    font-size: 0.5em;
+  }
+
+  .texto-email a {
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .rodape {
+    font-size: 0.5em;
+  }
+}
